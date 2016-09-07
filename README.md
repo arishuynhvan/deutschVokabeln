@@ -3,10 +3,10 @@
 ## User's Stories
 
 #### Core functionalities
-- [ ] As the admin, only I can create and destroy words.
+- [x] As the admin, only I can create and destroy words.
 - [x] As a user, I can view all the words together
 - [x] As a user, I can view German words, their different forms, examples and English translation
-- [ ] As a user, I can view the app comfortably on common devices
+- [x] As a user, I can view the app comfortably on common devices
 
 #### Advanced
 - [ ] As a user, I can view the words as flashcards, i.e. each word is displayed on a card 
