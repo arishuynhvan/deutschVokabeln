@@ -3,6 +3,9 @@
   <head>
     <title><%= yield(:title) %> | Deutsch Vokabeln</title>
     <%= csrf_meta_tags %>
+    <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Yatra+One" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all',
                                               'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -13,7 +16,8 @@
     <%= render 'layouts/header' %>
     <div class="container">
       <div class="center jumbotron">
-    <h1>NUS-LAG1201: German 1 - Vocabulary Study</h1>
+    <h1>NUS-LAG1201</h1>
+    <h2 class = "header">German 1 - Vocabulary Study</h2>
 
     <h2>
       This is the opinionated vocabulary study app for LAG1201 module, AY16/17 Sem 1

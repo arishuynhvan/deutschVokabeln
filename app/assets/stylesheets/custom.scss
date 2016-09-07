@@ -4,7 +4,7 @@
 $primary-color: color("blue", "lighten-2") !default;
 @import "materialize";
 /* mixins, variables, etc. */
-
+$default-font:'Roboto', sans-serif;
 $gray-medium-light: #eaeaea;
 
 /* universal */
@@ -34,6 +34,8 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-family: $default-font;
 }
 
 h1 {
@@ -41,6 +43,16 @@ h1 {
   letter-spacing: -0.167rem;
   margin-bottom: 2.5rem;
   text-align: center;
+  font-family:'Yatra One', cursive;
+}
+
+.header {
+    color: white;
+    font-weight: 300;
+    font-size: 2em;
+}
+.jumbotron{
+  background-color: #2196F3;
 }
 
 h2 {
@@ -49,8 +61,10 @@ h2 {
   margin-bottom: 2.5rem;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  color: blue-grey darken-4;
+  
 }
+
 
 p {
   font-size: 1.1em;
