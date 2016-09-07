@@ -1,3 +1,5 @@
+<% provide(:title, 'New Word') %>
+
 <%= form_for(word) do |f| %>
   <% if word.errors.any? %>
     <div id="error_explanation">

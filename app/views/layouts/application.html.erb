@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DeutschVokabeln</title>
+    <title><%= yield(:title) %> | Deutsch Vokabeln</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all',
+                                              'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/shim' %>
   </head>
-
   <body>
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <div class="center jumbotron">
+    <h1>NUS-LAG1201: German 1 - Vocabulary Study</h1>
+
+    <h2>
+      This is the opinionated vocabulary study app for LAG1201 module, AY16/17 Sem 1
+  </h2>
+
+  
+  </div>
     <%= yield %>
+          <%= render 'layouts/footer' %>
+    </div>
+
   </body>
 </html>
