@@ -29,7 +29,15 @@ $ bundle install --without production
 Next, migrate the database:
 
 ```
-$ rails db:migrate
+$ rake db:migrate
+```
+To deploy
+```
+git push heroku master (or yourbranch:master)
+```
+If new db was created
+```
+heroku rake db:migrate
 ```
 
 Finally, run the test suite to verify that everything is working correctly:
@@ -37,7 +45,7 @@ Finally, run the test suite to verify that everything is working correctly:
 ```
 $ rails test
 ```
-or auotmate test:
+or automate test:
 ```
 $ bundle exec guard
 ```
