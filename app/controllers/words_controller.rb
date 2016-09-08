@@ -1,6 +1,6 @@
 class WordsController < ApplicationController
   before_action :set_word, only: [:show, :edit, :update, :destroy]
-  http_basic_authenticate_with name: "arishuynhvan", password: "m#y#s#e#c#r#e#t", except: [:index, :show]
+ # Lousy authentication method ttp_basic_authenticate_with name: "arishuynhvan", password: "m#y#s#e#c#r#e#t", except: [:index, :show]
 
   # GET /words
   # GET /words.json
