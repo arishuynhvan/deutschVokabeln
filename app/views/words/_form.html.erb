@@ -16,26 +16,42 @@
   <% end %>
 
   <div class="field">
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.text_field :deutsch %>
     <%= f.label :deutsch %>
-    <%= f.text_field :deutsch %>
+      </div>
+    </div>
   </div>
 
   <div class="field">
-    <%= f.label :remarks %>
-    <%= f.text_area :remarks %>
+      <div class="row">
+        <div class="input-field col s12">
+          <%= f.text_area :remarks , class:"materialize-textarea" %>
+          <%= f.label :remarks   %>
+       </div>
+    </div>
   </div>
 
   <div class="field">
-    <%= f.label :sample_sentence %>
-    <%= f.text_area :sample_sentence %>
+    <div class="row">
+        <div class="input-field col s12">
+          <%= f.text_area :sample_sentence  , class:"materialize-textarea" %>
+          <%= f.label :sample_sentence %>
+        </div>
+      </div>
   </div>
 
   <div class="field">
-    <%= f.label :english %>
+    <div class="row">
+      <div class="input-field col s12">
     <%= f.text_field :english %>
+    <%= f.label :english %>
+    </div>
+    </div>
   </div>
 
-  <div class="actions waves-effect waves-light btn">
+  <div class="actions waves-effect waves-light btn red accent-1">
     <%= f.submit %>
   </div>
 <% end %>

@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails',        '5.0.0'
 gem 'bootstrap-sass', '3.3.6'
+gem 'bootstrap-modal-rails'
 gem 'materialize-sass'
 gem 'rails_utils'
 gem 'puma',         '3.4.0'

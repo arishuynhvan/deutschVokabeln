@@ -2,6 +2,7 @@
 @import "bootstrap";
 @import "materialize/components/color";
 $primary-color: color("blue", "lighten-2") !default;
+$secondary-color: color("red", "accent-1"); 
 @import "materialize";
 /* mixins, variables, etc. */
 $default-font:'Roboto', sans-serif;
@@ -94,6 +95,13 @@ img {
   display: none;
 }
 
+/* form */
+.input-field{
+  border: $secondary-color;
+  label{
+    color: $secondary-color;
+  }
+}
 /* footer */
 footer {
   margin-top: 45px;
@@ -118,3 +126,4 @@ footer {
     }
   }
 }
+
