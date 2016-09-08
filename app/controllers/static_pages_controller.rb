@@ -8,6 +8,9 @@ class StaticPagesController < ApplicationController
   def study
   end
   
+  def flashcard
+  end
+  
   def about
   end
   

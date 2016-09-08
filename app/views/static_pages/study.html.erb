@@ -1,13 +1,15 @@
-<div class='container-fluid center'>
+<div class='container-fluid'>
   <h1>Revision</h1>
-  <div class="col-md-3 col-md-offset-5">
+  <div class="row">
     <!--some form or input for number of cards here-->
-    <div class="input-field col s3 ">
+    <div class="input-field col s2 push-s5">
           <input id="word_count" type="number">
           <label for="word_count">How many words?</label>
    </div>
  </div>
- <br>
- <%= link_to 'Start', flashcard_path,  class: " waves-effect waves-light btn red accent-1"%>
-<<%#= link_to 'Start', flashcard_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'}  %>
+
+<%#= link_to 'Start', flashcard_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'}  %>
 </div>
+<div class="row">
+ <%= link_to 'Start', flashcard_path,  class: "col s2 push-s5 waves-effect waves-light btn red accent-1"%>
+ </div>
