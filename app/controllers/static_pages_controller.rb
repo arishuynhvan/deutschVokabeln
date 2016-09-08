@@ -6,6 +6,7 @@ class StaticPagesController < ApplicationController
   end
   
   def study
+    @words = Word.all
   end
   
   def flashcard
