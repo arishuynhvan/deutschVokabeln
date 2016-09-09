@@ -56,3 +56,6 @@ If the test suite passes, you'll be ready to run the app in a local server:
 ```
 $  rails server -b $IP -p $PORT
 ```
+
+#### Reference
+1. [Flip card animation](https://davidwalsh.name/css-flip)
